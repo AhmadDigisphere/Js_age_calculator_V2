@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Age Calculator</title>
+  
+  
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+ <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="wrapper">
+  <div class="badge">&#9679; Age Calculator</div>
+  <h1>How old<br>are <span>you?</span></h1>
+  <p class="subtitle">Enter your date of birth below</p>
+
+  <div class="card">
+    <div class="input-group">
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" />
+      <p class="error" id="error">Please select a valid date of birth.</p>
+    </div>
+    <button onclick="calculate()">Calculate My Age →</button>
+
+    <div class="results" id="results">
+      <p class="results-title">Your Age Breakdown</p>
+
+      <div class="age-display">
+        <div class="age-block">
+          <span class="num" id="years">0</span>
+          <span class="unit">Years</span>
+        </div>
+        <div class="age-block">
+          <span class="num" id="months">0</span>
+          <span class="unit">Months</span>
+        </div>
+        <div class="age-block">
+          <span class="num" id="days">0</span>
+          <span class="unit">Days</span>
+        </div>
+      </div>
+
+      <div class="details-grid">
+        <div class="detail-item">
+          <span class="d-label">Total Days</span>
+          <span class="d-val" id="totalDays">–</span>
+        </div>
+        <div class="detail-item">
+          <span class="d-label">Total Weeks</span>
+          <span class="d-val" id="totalWeeks">–</span>
+        </div>
+        <div class="detail-item">
+          <span class="d-label">Total Hours</span>
+          <span class="d-val" id="totalHours">–</span>
+        </div>
+        <div class="detail-item">
+          <span class="d-label">Total Minutes</span>
+          <span class="d-val" id="totalMins">–</span>
+        </div>
+        <div class="next-bday" id="nextBday"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
