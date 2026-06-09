@@ -289,3 +289,32 @@
   .num {
       animation: countUp 0.4s ease both;
   }
+
+
+.brand-credit {
+    margin-top: 24px;
+    text-align: center;
+    color: rgba(255, 255, 255, .55);
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.brand-credit span {
+    color: #c8f031;
+    font-weight: 600;
+}
+
+@media (max-width:768px) {
+    .brand-credit {
+        font-size: 13px;
+        letter-spacing: 1.5px;
+    }
+}
+
+@media (max-width:480px) {
+    .brand-credit {
+        font-size: 12px;
+        letter-spacing: 1px;
+        margin-top: 18px;
+    }
+}
